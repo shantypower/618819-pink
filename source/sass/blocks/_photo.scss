@@ -96,7 +96,8 @@
   .photo__list .user-photo__info {
     display: flex;
     flex-direction: column;
-    min-height: 108px;
+    justify-content: space-between;
+    height: 108px;
     padding-top: 24px;
     padding-right: 33px;
     padding-bottom: 23px;
