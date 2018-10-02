@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div style="display:none">
+    <include src="source/img/sprite.svg"></include>
+  </div>
+  <header class="header header__not-main header--closed">
+    <div class="header__top-box">
+      <div class="header__wrapper">
+        <div class="header__top header__top--closed header__top--nojs">
+          <div class="header__container">
+            <div class="header__logo-container">
+              <a class="header__logo" href="index.html">
+                <svg class="header__logo-mobile-white" width="75" height="22">
+                  <use xlink:href="#logo-pink-white-mobile"></use>
+                </svg>
+                <svg class="header__logo-tablet-white" width="147" height="40">
+                  <use xlink:href="#logo-pink-white-tablet"></use>
+                </svg>
+                <svg class="header__logo-desktop-white" width="147" height="40">
+                  <use xlink:href="#logo-pink-white-desktop"></use>
+                </svg>
+              </a>
+            </div>
+            <button class="header__button header__button--hidden" type="button">
+              <svg class="header__button-svg header__button-svg--burger" width="50" height="24">
+                <use xlink:href="#icon-menu-burger"></use>
+              </svg>
+              <svg class="header__button-svg header__button-svg--cross" width="24" height="23">
+                <use xlink:href="#icon-menu-cross"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <nav class="header__nav main-nav header__nav--nojs header__nav--closed">
+          <ul class="main-nav__list--opened main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item main-nav__item--current">
+              <a class="main-nav__link main-nav__link--current">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <h1 class="header__text">Конкурс на самое безбашенное путешествие с Пинк</h1>
+  </header>
+
+  <main class="competition">
+    <div class="competition__wrapper">
+      <h2 class="competition__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+        <span class="competition__hidden-text">Пожалуйста, заполните форму ниже:</span>
+      </h2>
+      <form class="competition__form" action="https://echo.htmlacademy.ru" method="post">
+
+        <fieldset class="filters-group  filters-group__fullname input-block">
+          <div class="filters-group__narrow">
+            <p class="input-block__item input-block__item--input">
+              <label class="input-block__fullname-label" for="surname-field">Фамилия:</label>
+              <input type="text" class="input-block__input" name="surname" id="surname-field" placeholder="Укажите фамилию *" autofocus required>
+            </p>
+            <p class="input-block__item  input-block__item--input">
+              <label class="input-block__fullname-label" for="name-field">Имя:</label>
+              <input type="text" class="input-block__input" name="name" id="name-field" placeholder="Введите ваше имя *" required>
+            </p>
+            <p class="input-block__item input-block__item--input">
+              <label class="input-block__fullname-label" for="patronymic-field">Отчество:</label>
+              <input type="text" class="input-block__input" name="patronymic" id="patronymic-field" placeholder="Ну и отчество тоже">
+            </p>
+          </div>
+        </fieldset>
+
+        <fieldset class="filters-group filters-group__achievements input-block">
+          <h3 class="filters-group__title">Ваши безбашенные достижения в путешествии</h3>
+          <div class="filters-group__wide">
+            <div class="input-block__list">
+              <div class="input-block__item-checkbox">
+                <div class="input-block__checkbox-container">
+                  <input class="input-block__input input-block__input--checkbox visually-hidden" type="checkbox" name="selfie" id="selfie-field" checked>
+                  <label class="input-block__text input-block__checkbox-text" for="selfie-field">Сделал селфи с акулой</label>
+                </div>
+                <div class="input-block__checkbox-container">
+                  <input class="input-block__input input-block__input--checkbox visually-hidden" type="checkbox" name="beach" id="beach-field" checked>
+                  <label class="input-block__text input-block__checkbox-text" for="beach-field">Обгорел на пляже</label>
+                </div>
+              </div>
+              <div class="input-block__item-checkbox">
+                <div class="input-block__checkbox-container">
+                  <input class="input-block__input input-block__input--checkbox visually-hidden" type="checkbox" name="cinema-star" id="cinema-star-field">
+                  <label class="input-block__text input-block__checkbox-text" for="cinema-star-field">Видел Чака Норриса</label>
+                </div>
+                <div class="input-block__checkbox-container">
+                  <input class="input-block__input input-block__input--checkbox visually-hidden" type="checkbox" name="souvenir" id="souvenir-field">
+                  <label class="input-block__text input-block__checkbox-text" for="souvenir-field">Накупил сувениров</label>
+                </div>
+              </div>
+              <div class="input-block__item-checkbox">
+                <div class="input-block__checkbox-container">
+                  <input class="input-block__input input-block__input--checkbox visually-hidden" type="checkbox" name="tower" id="tower-field" checked>
+                  <label class="input-block__text input-block__checkbox-text" for="tower-field">Удержал башню</label>
+                </div>
+                <div class="input-block__checkbox-container">
+                  <input class="input-block__input input-block__input--checkbox visually-hidden" type="checkbox" name="hotel" id="hotel-field">
+                  <label class="input-block__text input-block__checkbox-text" for="hotel-field">Разгромил отель</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="filters-group filters-group__contacts input-block">
+          <h3 class="filters-group__title">Контактная информация</h3>
+          <div class="filters-group__wide">
+            <div class="filters-group__contact-info">
+              <p class="input-block__item input-block__item--input">
+                <label class="input-block__contacts-label  input-block__phone" for="phone-field">Номер телефона</label>
+                <input type="tel" class="input-block__input input-block__contacts-input" name="phone" id="phone-field" placeholder="Номер, пожалуйста" pattern="\+7\-[0-9]{3}-[0-9]{3}-[0-9]{4}">
+              </p>
+              <p class="input-block__item input-block__item--input">
+                <label class="input-block__contacts-label input-block__email" for="email-field">Адрес почты</label>
+                <input type="email" class="input-block__input input-block__contacts-input" name="email" id="email-field" placeholder="Введите почту *" required>
+              </p>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="filters-group filters-group__platform input-block">
+          <h3 class="filters-group__title">С каким приложением путешествовали?</h3>
+          <div class="filters-group__narrow">
+            <ul class="input-block__list input-block__list-radio">
+              <li class="input-block__item-radio">
+                <input class="input-block__input input-block__input--radiobutton visually-hidden" type="radio" name="phone-type" id="radio1"
+                  checked>
+                <label class="input-block__text input-block__radio-text" for="radio1">Pink для iOS</label>
+              </li>
+              <li class="input-block__item-radio">
+                <input class="input-block__input input-block__input--radiobutton visually-hidden" type="radio" name="phone-type" id="radio2">
+                <label class="input-block__text input-block__radio-text" for="radio2">Pink на Android</label>
+              </li>
+              <li class="input-block__item-radio">
+                <input class="input-block__input input-block__input--radiobutton visually-hidden" type="radio" name="phone-type" id="radio3">
+                <label class="input-block__text input-block__radio-text" for="radio3">Windows Phone</label>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+
+        <fieldset class="filters-group filters-group__emotions input-block">
+          <h3 class="filters-group__title">Опишите свои эмоции</h3>
+          <div class="filters-group__wide">
+            <textarea class="input-block__input input-block__input--textarea" name="emotions" id="emotions-field" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </div>
+        </fieldset>
+
+        <div class="competition__btn-box competition__container">
+          <button class="competition__btn btn" type="submit">Отправить форму</button>
+          <small class="competition__legend competition__legend--mobile">
+              <sup class="competition__footnote">*</sup> — обязательные поля
+          </small>
+          <small class="competition__legend competition__legend--desktop">
+            <sup class="competition__footnote">*</sup> — обязательные для заполнения поля
+          </small>
+        </div>
+
+      </form>
+    </div>
+  </main>
+
+  <div class="pop-up pop-up__error">
+    <h2 class="pop-up__title">Что-то пошло не так!</h2>
+    <p class="pop-up__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <div class="pop-up__button-wrapper">
+      <button class="pop-up__btn btn" type="button">ok</button>
+    </div>
+
+  </div>
+
+  <div class="pop-up pop-up__ok">
+    <h2 class="pop-up__title">Ваша заявка отправлена</h2>
+    <p class="pop-up__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и
+      <br> оповестим вас.</p>
+    <div class="pop-up__button-wrapper">
+      <button class="pop-up__btn pop-up__btn--close" type="button">Закрыть окно</button>
+    </div>
+  </div>
+
+  <footer class="footer footer container">
+    <h2 class="visually-hidden">Мы в соцсетях</h2>
+    <a class="footer__logo" href="index.html">
+      <svg class="footer__svg footer__logo-mobile-blue" width="147" height="40">
+        <use xlink:href="#logo-pink-blue-mobile"></use>
+      </svg>
+      <svg class="footer__svg footer__logo-desktop-blue" width="147" height="40">
+        <use xlink:href="#logo-pink-blue-desktop"></use>
+      </svg>
+    </a>
+    <ul class="footer__social-list">
+      <li class="footer__social-item footer__social-item--twitter">
+        <a class="footer__social-link" href="#" aria-label="Мы в twitter">
+          <svg class="footer__social-logo" width="18" height="14" fill="#d22856" viewBox="0 0 18 14">
+            <use xlink:href="#icon-twitter"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="footer__social-item footer__social-item--facebook">
+        <a class="footer__social-link" href="#" aria-label="Мы в facebook">
+          <svg class="footer__social-logo" width="9" height="18" viewBox="0 0 9 18" fill="#d22856">
+            <use xlink:href="#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="footer__social-item footer__social-item--youtube">
+        <a class="footer__social-link" href="#" aria-label="Мы на youtube">
+          <svg class="footer__social-logo" viewBox="0 0 15 13" width="15" height="13" fill="#d22856">
+            <use xlink:href="#icon-youtube"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <div class="footer__copyright">
+      <p class="footer__text">Разработано</p>
+      <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на сайт HTML Academy">
+        <svg class="footer__logo-htmlacademy" width="27" height="34" fill="#d22856">
+          <use xlink:href="#logo-htmlacademy"></use>
+        </svg>
+      </a>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
