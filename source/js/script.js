@@ -3,27 +3,27 @@ var myMap = document.getElementById("map__canvas");
 if (myMap) {
 
   ymaps.ready(function () {
-    myMap = new ymaps.Map('map__canvas', {
+    myMap = new ymaps.Map("map__canvas", {
       center: [59.938631, 30.323055],
       zoom: 16.25
     }, {
-        searchControlProvider: 'yandex#search'
+        searchControlProvider: "yandex#search"
       }),
 
       // Создаём макет содержимого.
       MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-        '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+        "<div style='color: #FFFFFF; font-weight: bold;'>$[properties.iconContent]</div>"
       ),
 
       myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-        hintContent: 'ул. Большая Конюшенная, 19/8',
-        balloonContent: 'ул. Большая Конюшенная, 19/8'
+        hintContent: "ул. Большая Конюшенная, 19/8",
+        balloonContent: "ул. Большая Конюшенная, 19/8"
       }, {
           // Опции.
           // Необходимо указать данный тип макета.
-          iconLayout: 'default#image',
+          iconLayout: "default#image",
           // Своё изображение иконки метки.
-          iconImageHref: 'img/icon-map-marker.svg',
+          iconImageHref: "img/icon-map-marker.svg",
           // Размеры метки.
           iconImageSize: [36, 36],
           // Смещение левого верхнего угла иконки относительно

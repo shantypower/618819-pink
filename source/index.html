@@ -6,12 +6,38 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <!-- Pixel Glass -->
+  <style>
+    HTML {
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    /* По умолчанию показывается мобильный макет */
+    background-image: url("/preview/pink-index-mobile.jpg");
+  }
+  /* Планшет */
+  @media (min-width: 660px) {
+    HTML {
+      /* Планшетный макет */
+      background-image: url("preview/pink-index-tablet.jpg");
+    }
+  }
+  /* Десктоп */
+  @media (min-width: 960px) {
+    HTML {
+      /* Десктопный макет */
+      background-image: url("preview/pink-index-desktop.jpg");
+    }
+  }
+</style>
+  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+  <script src="../node_modules/pixel-glass/script.js"></script>
+  <!-- // Pixel Glass -->
 </head>
 
 <body class="main-page">
-    <div style="display: none">
-      <include src="source/img/sprite.svg"></include>
-    </div>
+  <div style="display: none">
+    <include src="source/img/sprite.svg"></include>
+  </div>
   <header class="header header__main-page header--closed">
 
     <div class="header__top-box">
@@ -65,10 +91,12 @@
       <div class="intro__wrapper">
         <div class="intro__container">
           <h2 class="intro__title">Взгляните на жизнь иначе!</h2>
-          <a class="intro__btn intro__btn--white" href="https://www.apple.com/itunes/working-itunes/market/" target="_blank">Скачать приложение</a>
+          <a class="intro__btn intro__btn--white" href="https://www.apple.com/itunes/working-itunes/market/" target="_blank">Скачать
+            приложение</a>
           <ul class="intro__list">
             <li class="intro__item">
-              <a class="intro__link intro__link--apple" href="https://www.apple.com/itunes/working-itunes/market/" target="_blank">
+              <a class="intro__link intro__link--apple" href="https://www.apple.com/itunes/working-itunes/market/"
+                target="_blank">
                 <svg class="intro__logo" width="46" height="57">
                   <use xlink:href="#logo-apple"></use>
                 </svg>
@@ -113,15 +141,18 @@
             <ul class="information__list">
               <li class="information__item information__item-1">
                 <h3 class="information__title">Поднимает настроение</h3>
-                <p class="information__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+                <p class="information__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+                  несколько кликов!</p>
               </li>
               <li class="information__item information__item-2">
                 <h3 class="information__title">Меняет мир вокруг</h3>
-                <p class="information__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы&#160;<br>усилить эффект</p>
+                <p class="information__text">Сделайте снимок и украсьте его смайликом или текстовой подписью,
+                  чтобы&#160;<br>усилить эффект</p>
               </li>
               <li class="information__item information__item-3">
                 <h3 class="information__title">Заводит новых друзей</h3>
-                <p class="information__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+                <p class="information__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
+                  новых</p>
               </li>
             </ul>
           </div>
@@ -138,7 +169,8 @@
           <div class="effect__description">
             <h2 class="effect__title">Эффект&#160;<br>на 24 часа!
             </h2>
-            <p class="effect__text">Британские ученые провели исследования и доказали,&#160;<br class="effect__wrap">что положительный эффект&#160;<br>от использования приложения длится целые сутки!</p>
+            <p class="effect__text">Британские ученые провели исследования и доказали,&#160;<br class="effect__wrap">что
+              положительный эффект&#160;<br>от использования приложения длится целые сутки!</p>
             <a class="effect__link" href="#">
               <span class="effect__span">Узнать больше об исследовании</span>
             </a>
@@ -155,7 +187,8 @@
                 <cite class="review__title">Николай Петров</cite>
                 <p class="review__about"> 25 лет, водитель трамвая</p>
               </div>
-              <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился
+              <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+                серые вещи! А еще я познакомился
                 со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </div>
             <div class="review__item review__item--second slider__item">
@@ -163,7 +196,8 @@
                 <cite class="review__title">Николай Петров</cite>
                 <p class="review__about"> 25 лет, водитель трамвая</p>
               </div>
-              <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился
+              <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+                серые вещи! А еще я познакомился
                 со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </div>
             <div class="review__item review__item--third slider__item">
@@ -171,16 +205,17 @@
                 <cite class="review__title">Николай Петров</cite>
                 <p class="review__about"> 25 лет, водитель трамвая</p>
               </div>
-              <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился
+              <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+                серые вещи! А еще я познакомился
                 со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </div>
           </div>
-          <button class="review__toggle review__toggle--prev">
+          <button class="review__toggle review__toggle--prev" tabindex="0">
             <svg class="arrow" width="22" height="41">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-review-arrow-left"></use>
             </svg>предыдущий отзыв
           </button>
-          <button class="review__toggle review__toggle--next">
+          <button class="review__toggle review__toggle--next" tabindex="0">
             <svg class="arrow" width="22" height="41">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-review-arrow-right"></use>
             </svg>следующий отзыв

@@ -64,12 +64,18 @@
 
 .input-block__input:hover {
   border-color: $darkgrey;
+  cursor: pointer;
 }
 
 .input-block__input:focus,
 .input-block__input:active {
   border-color: $red;
   outline: none;
+}
+
+.input-block__input:disabled + .input-block__text {
+  opacity: 0.3;
+  cursor: default;
 }
 
 .input-block__input::placeholder {
@@ -80,6 +86,10 @@
   padding-left: 69px;
 
   @include font-set(18px, 30px, 600, $darkgrey, center);
+}
+
+.input-block__text:hover {
+  cursor: pointer;
 }
 
 .input-block__input--textarea {
@@ -171,7 +181,7 @@
   }
 
   .input-block__item--input:last-of-type {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .input-block__text {

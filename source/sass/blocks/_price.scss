@@ -16,17 +16,14 @@
 
 .price__icon-no {
   fill: #f25b26;
+  margin-left: auto;
 }
+
 .price__conainer {
   box-sizing: border-box;
   width: 320px;
   padding: 0 20px;
   margin: 0 auto;
-}
-
-.price__wrapper {
-  width: 100%;
-  padding: 0;
 }
 
 .price__list {
@@ -63,6 +60,8 @@
   justify-content: space-between;
   margin: 0 auto;
   overflow: hidden;
+  width: 100%;
+  padding: 0;
 }
 
 .price__row {
@@ -148,10 +147,6 @@
 .price__icon-yes,
 .price__option-name {
   align-self: center;
-}
-
-.price__icon-no {
-  margin-left: auto;
 }
 
 .price__value-box {

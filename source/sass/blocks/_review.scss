@@ -12,6 +12,11 @@
 
 .review__toggle {
   display: none;
+
+  &:active,
+  &:focus {
+    outline: 2px solid #2395d6;
+  }
 }
 
 .review__wrapper {
