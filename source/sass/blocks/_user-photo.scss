@@ -1,0 +1,149 @@
+.user-photo__wrapper {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.user-photo__container {
+  text-align: center;
+}
+
+.user-photo__img {
+  display: block;
+  width: 100%;
+}
+
+.user-photo__info {
+  margin-bottom: 20px;
+  padding: 18px;
+  padding-bottom: 20px;
+
+  background-color: $grey;
+}
+
+.user-photo__info--wide {
+  margin-bottom: 19px;
+}
+
+.user-photo__title {
+  margin: 0;
+
+  @include font-set(14px, 24px, 700, $darkgrey, left);
+}
+
+.user-photo__span {
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.user-photo__description {
+  margin: 0;
+  margin-bottom: 9.5px;
+
+  @include font-set(14.5px, 24px, 400, $darkgrey, left);
+}
+
+.user-photo__footer {
+  text-transform: uppercase;
+
+  @include font-set(12px, 24px, 500, $red, left);
+}
+
+.user-photo__btn {
+  width: 12.545px;
+  height: 11.99px;
+  padding: 0;
+
+  background: url("../img/icon-heart.svg") no-repeat center;
+  border: none;
+  outline: none;
+}
+
+.user-photo__like {
+  margin-left: 16px;
+}
+
+.user-photo__counter {
+  margin-left: 3px;
+}
+
+@media (min-width: $tablet-width) {
+  .user-photo__info {
+    margin-bottom: 19px;
+  }
+
+  .user-photo__info--wide {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding: 24px 27px;
+    padding-bottom: 13px;
+  }
+
+  .user-photo__info--wide .user-photo__title {
+    order: 1;
+  }
+
+  .user-photo__footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    order: 2;
+  }
+
+  .user-photo__info--wide .user-photo__description {
+    order: 3;
+  }
+
+  .user-photo__info--wide .user-photo__like {
+    margin-right: 18px;
+  }
+
+  .user-photo__img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .user-photo .user-photo__footer {
+    justify-content: space-between;
+    margin-top: auto;
+  }
+
+  .user-photo__like {
+    margin-left: 0;
+  }
+
+  .user-photo__description {
+    margin-bottom: 12px;
+  }
+
+  .user-photo__text {
+    margin-bottom: 24px;
+    padding: 45px 0;
+
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-photo__info--wide {
+    margin-bottom: 15px;
+    padding-top: 24px;
+    padding-right: 31px;
+  }
+
+  .user-photo__description {
+    margin-bottom: 11px;
+  }
+
+  .user-photo__img {
+    width: 300px;
+    height: 400px;
+  }
+
+  .user-photo__text {
+    margin-bottom: 26px;
+    padding: 40px 0;
+  }
+}

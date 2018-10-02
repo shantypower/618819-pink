@@ -1,0 +1,164 @@
+.photo {
+  position: relative;
+
+  margin: 0 auto;
+  margin-bottom: 0;
+}
+
+.photo__wrapper {
+  box-sizing: border-box;
+  width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.photo__wide-img img {
+  display: block;
+  width: 100%;
+}
+
+.photo__wide-img {
+  width: 100%;
+}
+
+.photo__text {
+  width: 250px;
+  margin: 0 auto;
+  margin-bottom: 4px;
+  padding: 45px 30px;
+
+  @include font-set(14px, 30px, 600, $darkgrey, center);
+}
+
+.photo__user-photo-text {
+  margin: 0 auto;
+  margin-bottom: 21px;
+  padding: 21px 0;
+
+  @include font-set(14px, 30px,600,$darkgrey, center);
+}
+
+.photo__best::before {
+  content: "панорама дня";
+  position: absolute;
+  right: 20px;
+
+  display: block;
+  width: 140px;
+  height: 31px;
+  padding-top: 6px;
+
+  text-transform: uppercase;
+
+  background-color: $red;
+
+  @include font-set(12px, 24px, 700, $white, center);
+}
+
+.photo__list {
+  @include list-reset;
+}
+
+@media (min-width: $tablet-width) {
+  .photo__wide-img {
+    width: 100%;
+    min-height: 506px;
+
+    img {
+      height: 509px;
+    }
+  }
+
+  .photo {
+    margin-bottom: 0;
+  }
+
+  .photo__wrapper {
+    width: 660px;
+    padding: 0 20px;
+  }
+
+  .photo__text {
+    width: 450px;
+    padding-top: 92px;
+    padding-bottom: 72px;
+
+    @include font-set(18px, 30px, 600, $darkgrey, center);
+  }
+
+  .photo__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+
+  .photo__list .user-photo__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 108px;
+    padding-top: 24px;
+    padding-right: 33px;
+    padding-bottom: 23px;
+    padding-left: 28px;
+  }
+
+  .photo__user-photo-text {
+    font-size: 18px;
+    margin-bottom: 48px;
+  }
+
+  .photo__item {
+    flex-basis: 300px;
+  }
+
+  .photo__best::before {
+    top: 285px;
+    right: 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo {
+    margin-bottom: 25px;
+  }
+
+  .photo__wrapper {
+    width: 960px;
+    padding: 0 10px;
+  }
+
+  .photo__text {
+    width: 600px;
+    padding-bottom: 84px;
+  }
+
+
+  .photo__user-photo-text {
+    padding-top: 15px;
+    margin-bottom: 45px;
+  }
+
+  .photo__best::before {
+    top: 293px;
+    right: 227px;
+  }
+
+  .photo__item {
+    margin-top: 35px;
+  }
+
+  .photo__img {
+    display: block;
+    height: 506px;
+  }
+
+  .photo__wide-img {
+    height: auto;
+
+    img {
+      height: 506px;
+    }
+  }
+}
