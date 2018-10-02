@@ -42,6 +42,7 @@ if (myMap) {
   var headerTop = document.querySelector(".header__top");
 
   navMain.classList.remove("header__nav--nojs");
+  headerBg.classList.remove("header__main-page--nojs");
   headerTop.classList.remove("header__top--opened");
   headerTop.classList.remove("header__top--nojs");
   navToggle.classList.remove("header__button--hidden");

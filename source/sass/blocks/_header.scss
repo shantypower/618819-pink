@@ -28,6 +28,10 @@
   background-position-y: top;
 }
 
+.header--closed.header__main-page--nojs {
+  background-position-y: center;
+}
+
 .header__main-page.header__menu--opened {
   min-height: 991px;
   border-bottom: none;
@@ -208,6 +212,10 @@
 
   .header__main-page.header--closed {
     min-height: 728px;
+  }
+
+  .header--closed.header__main-page--nojs {
+    background-position-y: bottom;
   }
 
   .header__not-main.header__menu--opened {
