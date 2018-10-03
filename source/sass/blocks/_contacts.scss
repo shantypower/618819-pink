@@ -35,6 +35,7 @@
 }
 
 .contacts__mail {
+  position: relative;
   margin-bottom: 22px;
 }
 
@@ -67,16 +68,17 @@
   word-wrap: break-word;
 }
 
-.contacts__span {
+.contacts__text--underline::before {
+  position: absolute;
   display: block;
-
-  line-height: 30px;
-
-  border-bottom: 1px solid transparent;
+  content: "";
+  top: 80px;
+  height: 1px;
+  width: 100%;
 }
 
-.contacts__span:hover {
-  border-bottom: 1px solid $darkgrey;
+.contacts__text--underline:hover::before {
+  background-color: $darkgrey;
 }
 
 .contacts__span:active,
