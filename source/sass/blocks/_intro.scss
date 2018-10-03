@@ -116,7 +116,7 @@
   .intro {
     background: url("../img/iphone-hand-tablet@1x.png") no-repeat;
     background-color: transparent;
-    background-position: 27px bottom;
+    background-position: 0 bottom;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-hand-tablet@2x.png");
@@ -156,7 +156,7 @@
 
   .intro__container {
     width: 298px;
-    margin-left: 46px;
+    margin-left: 22px;
   }
 
   .intro__btn--white {
