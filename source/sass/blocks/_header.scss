@@ -6,6 +6,7 @@
   background: $deepgrey url("../img/bg-back-mobile@1x.jpg") no-repeat;
   background-size: 100% auto;
   background-position-y: 259px;
+  background-color: #253240;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
@@ -25,6 +26,10 @@
 .header__main-page.header--closed {
   min-height: 735px;
   background-position-y: top;
+}
+
+.header--closed.header__main-page--nojs {
+  background-position-y: center;
 }
 
 .header__main-page.header__menu--opened {
@@ -133,10 +138,6 @@
   display: block;
 }
 
-.main-nav--nojs .header__button {
-  display: none;
-}
-
 .header__top--closed .header__button {
   width: 50px;
   height: 26px;
@@ -166,14 +167,16 @@
   .header__main-page {
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
     background-position: center 0;
+    background-color: #253240;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
       background-size: 1200px auto;
     }
   }
+
   .header__top {
-    height:109px;
+    height: 109px;
   }
 
   .header__logo-container {
@@ -211,6 +214,10 @@
     min-height: 728px;
   }
 
+  .header--closed.header__main-page--nojs {
+    background-position-y: bottom;
+  }
+
   .header__not-main.header__menu--opened {
     min-height: 695px;
     background-position-y: 255px;
@@ -230,6 +237,7 @@
   .header {
     background: url("../img/bg-back-desktop@1x.jpg") no-repeat center 0;
     background-size: 234%;
+    background-color: #253240;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
@@ -292,7 +300,7 @@
     align-items: center;
     width: 940px;
     margin: 0 auto;
-    padding: 0px 10px;
+    padding: 0 10px;
   }
 
   .header__top-box {

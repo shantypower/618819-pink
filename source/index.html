@@ -5,14 +5,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Пинк</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="main-page">
-    <div style="display:none">
-      <include src="source/img/sprite.svg"></include>
-    </div>
-  <header class="header header__main-page header--closed">
+  <div style="display: none">
+    <include src="source/img/sprite.svg"></include>
+  </div>
+  <header class="header header__main-page header--closed header__main-page--nojs">
 
     <div class="header__top-box">
       <div class="header__wrapper">
@@ -65,10 +68,12 @@
       <div class="intro__wrapper">
         <div class="intro__container">
           <h2 class="intro__title">Взгляните на жизнь иначе!</h2>
-          <a class="intro__btn intro__btn--white" href="https://www.apple.com/itunes/working-itunes/market/" target="_blank">Скачать приложение</a>
+          <a class="intro__btn intro__btn--white" href="https://www.apple.com/itunes/working-itunes/market/" target="_blank">Скачать
+            приложение</a>
           <ul class="intro__list">
             <li class="intro__item">
-              <a class="intro__link intro__link--apple" href="https://www.apple.com/itunes/working-itunes/market/" target="_blank">
+              <a class="intro__link intro__link--apple" href="https://www.apple.com/itunes/working-itunes/market/"
+                target="_blank">
                 <svg class="intro__logo" width="46" height="57">
                   <use xlink:href="#logo-apple"></use>
                 </svg>
@@ -99,7 +104,7 @@
     </article>
   </header>
 
-  <main class="main-page-content">
+  <main class="main-page__content">
     <div class="main-page__wrapper">
       <h1 class="visually-hidden">Главная страница сайта приложения Pink</h1>
       <div class="promo">
@@ -113,15 +118,18 @@
             <ul class="information__list">
               <li class="information__item information__item-1">
                 <h3 class="information__title">Поднимает настроение</h3>
-                <p class="information__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+                <p class="information__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+                  несколько кликов!</p>
               </li>
               <li class="information__item information__item-2">
                 <h3 class="information__title">Меняет мир вокруг</h3>
-                <p class="information__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы&#160;<br>усилить эффект</p>
+                <p class="information__text">Сделайте снимок и украсьте его смайликом или текстовой подписью,
+                  чтобы&#160;<br>усилить эффект</p>
               </li>
               <li class="information__item information__item-3">
                 <h3 class="information__title">Заводит новых друзей</h3>
-                <p class="information__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+                <p class="information__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
+                  новых</p>
               </li>
             </ul>
           </div>
@@ -138,10 +146,9 @@
           <div class="effect__description">
             <h2 class="effect__title">Эффект&#160;<br>на 24 часа!
             </h2>
-            <p class="effect__text">Британские ученые провели исследования и доказали,&#160;<br class="effect__wrap">что положительный эффект&#160;<br>от использования приложения длится целые сутки!</p>
-            <a class="effect__link" href="#">
-              <span class="effect__span">Узнать больше об исследовании</span>
-            </a>
+            <p class="effect__text">Британские ученые провели исследования и доказали,&#160;<br class="effect__wrap">что
+              положительный эффект&#160;<br>от использования приложения длится целые сутки!</p>
+            <a class="effect__link effect__link--underline" href="#">Узнать больше об исследовании</a>
           </div>
         </div>
       </section>
@@ -155,7 +162,8 @@
                 <cite class="review__title">Николай Петров</cite>
                 <p class="review__about"> 25 лет, водитель трамвая</p>
               </div>
-              <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился
+              <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+                серые вещи! А еще я познакомился
                 со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </div>
             <div class="review__item review__item--second slider__item">
@@ -163,7 +171,8 @@
                 <cite class="review__title">Николай Петров</cite>
                 <p class="review__about"> 25 лет, водитель трамвая</p>
               </div>
-              <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился
+              <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+                серые вещи! А еще я познакомился
                 со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </div>
             <div class="review__item review__item--third slider__item">
@@ -171,16 +180,17 @@
                 <cite class="review__title">Николай Петров</cite>
                 <p class="review__about"> 25 лет, водитель трамвая</p>
               </div>
-              <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился
+              <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+                серые вещи! А еще я познакомился
                 со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </div>
           </div>
-          <button class="review__toggle review__toggle--prev">
+          <button class="review__toggle review__toggle--prev" tabindex="0">
             <svg class="arrow" width="22" height="41">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-review-arrow-left"></use>
             </svg>предыдущий отзыв
           </button>
-          <button class="review__toggle review__toggle--next">
+          <button class="review__toggle review__toggle--next" tabindex="0">
             <svg class="arrow" width="22" height="41">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-review-arrow-right"></use>
             </svg>следующий отзыв
@@ -319,14 +329,14 @@
           <ul class="contacts__list">
             <li class="contacts__item contacts__phone">
               <h3 class="contacts__title">Звоните:</h3>
-              <p class="contacts__text">+7 (812) 555-66-66</p>
+              <p class="contacts__text">
+                <a class="contacts__link contacts__text" href="tel:+7(812)555-66-66">+7 (812) 555-66-66</a>
+              </p>
             </li>
             <li class="contacts__item contacts__mail">
               <h3 class="contacts__title">Пишите:</h3>
-              <p class="contacts__text">
-                <span class="contacts__span">
-                  <a class="contacts__link">mail@htmlacademy.ru</a>
-                </span>
+              <p class="contacts__text contacts__text--underline">
+                <a class="contacts__link" tabindex="0">mail@htmlacademy.ru</a>
               </p>
             </li>
             <li class="contacts__item contacts__adress">
@@ -337,7 +347,7 @@
         </div>
       </div>
     </section>
-    <div class="contacts__map-box contacts__map" id="map__canvas"></div>
+    <div class="map" id="map__canvas"></div>
   </main>
 
   <footer class="footer footer__main-page container">
@@ -382,7 +392,7 @@
       </a>
     </div>
   </footer>
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
   <script src="js/script.js"></script>
 </body>
 
