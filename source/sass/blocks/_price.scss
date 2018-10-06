@@ -15,8 +15,10 @@
 }
 
 .price__icon-no {
+  margin-left: auto;
   fill: #f25b26;
 }
+
 .price__conainer {
   box-sizing: border-box;
   width: 320px;
@@ -25,8 +27,13 @@
 }
 
 .price__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
   padding: 0;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .price__list {
@@ -55,14 +62,6 @@
   width: 57px;
 
   background-color: $grey;
-}
-
-.price__wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 0 auto;
-  overflow: hidden;
 }
 
 .price__row {
@@ -148,10 +147,6 @@
 .price__icon-yes,
 .price__option-name {
   align-self: center;
-}
-
-.price__icon-no {
-  margin-left: auto;
 }
 
 .price__value-box {
