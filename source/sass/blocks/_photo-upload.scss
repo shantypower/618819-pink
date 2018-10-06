@@ -116,6 +116,11 @@
   background-color: transparent;
   border: none;
   outline: none;
+
+  &:active,
+  &:focus {
+    outline: 2px solid #2395d6;
+  }
 }
 
 .photo-upload__range {

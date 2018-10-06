@@ -20,6 +20,7 @@
   }
 
   .effect__description {
+    position: relative;
     padding: 35px 0 0 71px;
   }
 
@@ -57,10 +58,14 @@
     @include font-set(14.5px, 14.5px, 400, $red, left);
   }
 
-  .effect__link .effect__span {
+  .effect__link--underline::before {
     display: inline-block;
-
-    border-bottom: 1px solid $red;
+    position: absolute;
+    content: "";
+    bottom: 41px;
+    height: 1px;
+    width: 226px;
+    background-color: $red;
   }
 
   .effect__wrap {
@@ -133,5 +138,10 @@
   .effect__link {
     font-size: 18.8px;
     line-height: 18.8px;
+  }
+
+  .effect__link--underline::before {
+    bottom: 59px;
+    width: 290px;
   }
 }
