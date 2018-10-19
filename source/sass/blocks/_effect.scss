@@ -90,12 +90,17 @@
     padding-bottom: 60px;
   }
 
+  .effect__timer {
+    padding-left: 10px;
+  }
+
   .effect__timer .timer {
     width: 298px;
     height: 345px;
   }
 
   .effect__timer::before {
+    left: 10px;
     padding-top: 183px;
     width: 298px;
     height: 345px;
@@ -104,7 +109,7 @@
 
   .effect__description {
     padding-top: 91px;
-    padding-left: 67px;
+    padding-left: 68px;
   }
 
   .effect__description::before {
