@@ -160,7 +160,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 256px;
+    padding-top: 365px;
   }
 
   .information__text br {
@@ -170,22 +170,24 @@
   .information__item:last-child {
     margin-bottom: 32px;
   }
-
+/*
   .information__item-1::before,
   .information__item-2::before,
   .information__item-3::before {
     content: "";
     position: absolute;
     top: -102px;
-    left: 61px;
+    left: 2px;
 
     display: block;
-    width: 200px;
+    width: 320px;
     height: 301px;
-  }
+  }*/
 
-  .information__item-1::before {
-    background: url("../img/iphone-screen-1-desktop@1x.png") no-repeat center top;
+  .information__item-1 {
+    background: url("../img/iphone-screen-1-desktop@1x.png") no-repeat;
+    background-position-x: 14px;
+    background-position-y: 7px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-screen-1-desktop@2x.png");
@@ -193,8 +195,10 @@
     }
   }
 
-  .information__item-2::before {
-    background: url("../img/iphone-screen-2-desktop@1x.png") no-repeat center top;
+  .information__item-2 {
+    background: url("../img/iphone-screen-2-desktop@1x.png") no-repeat;
+    background-position-x: 17px;
+    background-position-y: 7px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-screen-2-desktop@2x.png");
@@ -202,8 +206,10 @@
     }
   }
 
-  .information__item-3::before {
-    background: url("../img/iphone-screen-3-desktop@1x.png") no-repeat center top;
+  .information__item-3 {
+    background: url("../img/iphone-screen-3-desktop@1x.png") no-repeat;
+    background-position-x: 17px;
+    background-position-y: 7px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-screen-3-desktop@2x.png");
@@ -215,7 +221,9 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
     padding: 0;
+    margin-top: -109px;
 
     background-image: none;
   }
