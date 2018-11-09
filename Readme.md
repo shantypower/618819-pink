@@ -1,4 +1,4 @@
-# Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+# Личный проект «Пинк» 
 
 https://shantypower.github.io/618819-pink/
 
